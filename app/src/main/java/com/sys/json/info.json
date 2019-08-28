@@ -1,0 +1,12 @@
+{
+  "isDeleted": 0,
+  "userId": 1,
+  "userJobNo": "admin",
+  "userName": "管理员",
+  "userAvatar": null,
+  "userEmail": null,
+  "userPassword": "eb8650dd1cf8d74532e5e94b8e5db9de",
+  "userSalt": "42d4f30c26c381816122db6fccbd5623",
+  "userStatus": 1,
+  "userRegTime": "2019-08-01T00:53:41.000+0000"
+}

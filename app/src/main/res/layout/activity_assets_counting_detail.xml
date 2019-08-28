@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#f2f2f2"
+    tools:context=".main.activity.AssetsCountingDetailActivity">
+
+    <RelativeLayout
+        android:id="@+id/header"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="@drawable/line_white_bg_gray_bottom">
+
+        <TextView
+            android:id="@+id/header_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_centerVertical="true"
+            android:textColor="@color/black"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/counting_task_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/header"
+        android:background="@drawable/line_white_bg_gray_bottom"
+        android:gravity="center_horizontal"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:textSize="16sp" />
+
+    <ListView
+        android:id="@+id/asset_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/foot"
+        android:layout_below="@+id/counting_task_title"
+        android:layout_centerInParent="true"
+        android:layout_marginBottom="0dp"
+        android:divider="@null"
+        android:dividerHeight="10dp"
+        android:scrollbarStyle="outsideInset" />
+
+    <LinearLayout
+        android:id="@+id/foot"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="#EEEEEE"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <TextView
+            android:id="@+id/assets_counting"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:drawableStart="@drawable/scan"
+            android:drawablePadding="10dp"
+            android:gravity="center_vertical"
+            android:paddingStart="10dp"
+            android:paddingEnd="20dp"
+            android:text="@string/assets_counting"
+            android:textColor="@color/black" />
+
+        <EditText
+            android:id="@+id/asset_coding"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:hint="@string/counting_hint"
+            android:inputType="text" />
+
+        <Button
+            android:id="@+id/login_button"
+            android:layout_width="33dp"
+            android:layout_height="35dp"
+            android:background="@color/blue"
+            android:gravity="center_vertical"
+            android:text="@string/counting"
+            android:textAlignment="center"
+            android:textColor="@color/white" />
+    </LinearLayout>
+</RelativeLayout>
